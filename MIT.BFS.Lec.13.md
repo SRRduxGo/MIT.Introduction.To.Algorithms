@@ -105,7 +105,7 @@
       ⇚ ...  
       ⇚ .....  
       ⇚ `S - starting Node`  
-      ⤇ **This is the shortest path from `S` to `V`**
+      ⤇ **This is the shortest path from `S` to `V`**  
       ⤇ **Parent, for a given vertex is established using the `Order` in which `Vertices` are visited using the corresponding `Adjacency Lists`**  
       ⤇ **Parent pointer points opposite to the corresponding edge direction**  
       ⤇ _Example, if start at `A` to `C` then `Parent[B] ≈ A`_ `A ➟ B ➟ C ➟ B`  
