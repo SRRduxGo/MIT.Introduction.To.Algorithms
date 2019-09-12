@@ -35,7 +35,7 @@
 
 ## Graph Representation
 
-### Adjacency List (Best for multiple Graphs on the same set of vertices)
+### Adjacency List (Best to represent multiple Graphs defined on the same set of vertices)
 
 - _Array `Adj` of size `|V|`. Where `V` - is the set of ALL the vertices_
 - _As element in the `Array` is a `pointer` to a `Linked-List`_
