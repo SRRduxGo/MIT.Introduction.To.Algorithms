@@ -44,7 +44,7 @@
 
 > `Neighbors` are mainly the vertices that can be reached in one step_
 
-- _`Adj[u]` `≈` `{v ∈ V | (u,v) ∈ E}`_
+- ***`Adj[u]` `≈` `{v ∈ V | (u,v) ∈ E}`***
 
 #### Example
 
