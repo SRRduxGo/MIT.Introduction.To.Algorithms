@@ -96,6 +96,13 @@
     i += 1
   ```
 
-> Even though it has inner loops but its not `O(nˆ2)`. why OO! ?
+> Even though it has inner loops but its not `O(nˆ2)`. why oO! ?
 
-### 
+### Shortest Paths
+
+- `V` ⇚ `Parent[v]`
+      ⇚ `Parent[Parent[v]]`
+      ⇚ ...
+      ⇚ .....
+      ⇚ `S - starting Node`
+      - this is the shortest path from `S` to `V`
