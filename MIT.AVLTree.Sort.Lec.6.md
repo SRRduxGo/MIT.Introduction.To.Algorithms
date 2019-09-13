@@ -63,18 +63,33 @@
 ### AVL Insert
 
 - _Simple BST insert_
-- _Fix AVL property_
+- _Fix AVL `INVARIANT` property_
 
 > _SIDE NOTE :_
 >
-> ## Rotations
+> #### Rotations
 >
 > - `Left Rotate`
 >   - EXAMPLE: Tree ⤇ _Parent ⫘ x.{ A, y.{B,C} } ➠ **LEFT ROTATE (x)** ➠ Parent ⫘ y.{ x.{A, B}, C}_
->   - _Reversible Operation: Right Rotate ⇛ Parent ⫘ y.{ x.{A, B}, C}_
+>   - _Reversible Operation: **Right Rotate** ⇛ Parent ⫘ y.{ x.{A, B}, C}_
 >
 > - `Right Rotate`
->   - EXAMPLE: Tree ⤇ _Parent ⫘ y.{ x.{A, B}, C} ➠ **RIGHT ROTATE (x)** ➠ _Parent ⫘ x.{ A, y.{B,C} }_
->   - _Reversible Operation: Left Rotate ⇛ Parent ⫘ x.{ A, y.{B,C} }_
+>   - EXAMPLE: Tree ⤇ _Parent ⫘ y.{ x.{A, B}, C} ➠ **RIGHT ROTATE (y)** ➠ _Parent ⫘ x.{ A, y.{B,C} }_
+>   - _Reversible Operation: **Left Rotate** ⇛ Parent ⫘ x.{ A, y.{B,C} }_  
 >
-  
+>  
+
+#### ***Fix `AVL Tree` `INVARIANT` property***
+
+- Fix AVL property from changed node up
+- Suppose `x` is the lowest Node violating AVL-Invariant
+  - if `x` is right heavy
+    - _if `x` has a `right` child which is `right-heavy` or `balanced`_
+      - _LEFT-Rotate `x`_
+    - _if `x` has a `right` - `z` child which is `left-heavy`_
+      - _RIGHT-Rotate `z` then LEFT-Rotate `x`_
+
+#### AVL sort
+
+- Insert `N` items - `O(N Log N)`
+- in-order traversal  - `O(N)` time
