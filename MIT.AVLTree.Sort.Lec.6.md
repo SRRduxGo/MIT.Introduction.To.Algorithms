@@ -1,4 +1,4 @@
-# [AVL Trees, AVL Sort](https://youtu.be/FNeL18KsWPc?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
+# [AVL Trees, AVL Sort ⫘ ⤇ ⭆ ⇛ ➟ ➠](https://youtu.be/FNeL18KsWPc?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
 
 ## Agenda
 
@@ -46,7 +46,35 @@
 
 ## AVL Trees
 
-> ***Requires `heights` of `left` and `right` children of `every node` to `differ` by at most `±1`***
+> ***Requires `heights` of `left` and `right` children of `every node` to `differ` by at most `± 1`***
 
-- ***|`h`<sub>`l`</sub> - `h`<sub>`r`</sub>| `≤ 1`***
+- ***|`h`<sub>`l`</sub> - `h`<sub>`r`</sub>| `≤ 1` (numeric one)***
 
+### AVL Trees are Balanced
+
+- `worst case` is when `right` subtree  has height `1 more than` `left` subtree for `every Node`
+  - _`N`<sub>`h'`</sub> = `min` no. of nodes in an `AVL Tree` of height `h'`_
+  - _`N`<sub>`h'`</sub> = `1` + `N`<sub>`h'- 1`</sub> + `N`<sub>`h'- 2`</sub>_  
+                        > _`1` + `2.N`<sub>`h'- 2`</sub>_   
+                        > _`2.N`<sub>`h'- 2`</sub>_  
+                        = **`O(2ˆh/2)`**  
+                    `h` < `2.Log N`
+
+### AVL Insert
+
+- _Simple BST insert_
+- _Fix AVL property_
+
+> _SIDE NOTE :_
+>
+> ## Rotations
+>
+> - `Left Rotate`
+>   - EXAMPLE: Tree ⤇ _Parent ⫘ x.{ A, y.{B,C} } ➠ **LEFT ROTATE (x)** ➠ Parent ⫘ y.{ x.{A, B}, C}_
+>   - _Reversible Operation: Right Rotate ⇛ Parent ⫘ y.{ x.{A, B}, C}_
+>
+> - `Right Rotate`
+>   - EXAMPLE: Tree ⤇ _Parent ⫘ y.{ x.{A, B}, C} ➠ **RIGHT ROTATE (x)** ➠ _Parent ⫘ x.{ A, y.{B,C} }_
+>   - _Reversible Operation: Left Rotate ⇛ Parent ⫘ x.{ A, y.{B,C} }_
+>
+  
