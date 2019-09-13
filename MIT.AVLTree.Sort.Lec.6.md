@@ -62,6 +62,8 @@
 
 ### AVL Insert
 
+#### Steps
+
 - _Simple BST insert_
 - _Fix AVL `INVARIANT` property_
 
